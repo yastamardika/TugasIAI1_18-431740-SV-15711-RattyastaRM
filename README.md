@@ -5,15 +5,15 @@
  
 ## Route yang tersedia:
 
-no 1&2: 
-/mahasiwa => melihat semua mahasiswa per id
-/mahasiwa/{id} => method lihat per id dan method update
-/submission => melihat semua git
-/submission/{id} => untuk method delete
+### no 1&2: 
+### /mahasiwa => melihat semua mahasiswa per id
+### /mahasiwa/{id} => method lihat per id dan method update
+### /submission => melihat semua git
+### /submission/{id} => untuk method delete
 
-no 3:
-/pangkatTiga => untuk melihat id user dengan pangkat 3  
-/pangkatTelu/{angka} => untuk menghitung pangkat 3 parameter yang dimasukkan
+### no 3:
+### /pangkatTiga => untuk melihat id user dengan pangkat 3  
+### /pangkatTelu/{angka} => untuk menghitung pangkat 3 parameter yang dimasukkan
 
 # Lumen PHP Framework
 
