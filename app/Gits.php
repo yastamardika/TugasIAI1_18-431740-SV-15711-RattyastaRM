@@ -7,6 +7,7 @@ class Gits extends Model
 
     protected $primaryKey = 'id';
     protected $fillable = [
-        'user_id', 'git','created_at','updated_at'
+        'user_id', 'git'
     ];
+    protected $timestaps = true;
 }

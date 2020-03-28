@@ -21,4 +21,30 @@ class GitsController extends Controller
         }
         return response()->json($data);
     }
+
+    public function store(Request $request){
+        $result = Gits::create([
+            'user_id' => $request->user_id,
+            'git'=> $request->git
+            ]
+        );
+
+        if($result){
+            $data['code'] = 200;
+            $data['result'] = $result;
+        }else {
+            $data['code']=500;
+            $data['result'] = "Error";
+        }
+        return response()->json($data);
+    }
+
+    public function destroy($id){
+        $result = Gits::where('id',$id)->first();
+
+        $result->delete();
+
+        return redirect('/submission');
+    }
+
 }

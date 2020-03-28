@@ -22,11 +22,14 @@ $router->get('mahasiwa/{id}', 'UserController@show');
 //change data
 $router->put('mahasiwa/{id}', 'UserController@update');
 
-//delete data
-$router->delete('mahasiwa/{id}', 'UserController@destroy');
-
 //kumpulin tugas
+$router->post('submission', 'GitsController@store');
 $router->get('submission', 'GitsController@index');
+$router->delete('submission/{id}', 'GitsController@destroy');
+
+//nomer 3 bilangan pangkat tiga
+$router->get('pangkatTiga','TaskController@index');
+$router->get('pangkatTelu/{angka}','TaskController@default');
 
 //get key
 $router->get('/key', function() {

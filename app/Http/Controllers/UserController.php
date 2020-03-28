@@ -42,9 +42,11 @@ class UserController extends Controller
 
         $result->email = $request->email;
         $result->smp = $request->smp;
-        $result->fill([
-            'password' => Crypt::encrypt($request->password)
-        ]);
+        $result->password = $request->password;
+
+        // $result->fill([
+        //     'password' => Crypt::encrypt($request->password)
+        // ]);
         $result->save();
 
         if($result){
