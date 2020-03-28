@@ -1,3 +1,20 @@
+#TUGAS IAI
+
+##Semua routing disesuaikan dengan perintah yang diberikan 
+
+ 
+##routing yang tersedia:
+
+no 1&2: 
+/mahasiwa
+/mahasiwa/{id}
+/submission
+/submission/{id} => untuk method delete
+
+no 3:
+/pangkatTiga => untuk melihat id user dengan pangkat 3  
+/pangkatTelu/{angka} => untuk menghitung pangkat 3 parameter yang dimasukkan
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)

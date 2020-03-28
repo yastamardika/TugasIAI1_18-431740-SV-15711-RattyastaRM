@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Crypt;
 use App\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -42,7 +43,7 @@ class UserController extends Controller
 
         $result->email = $request->email;
         $result->smp = $request->smp;
-        $result->password = $request->password;
+        $result->password = Hash::make($request->password);
 
         // $result->fill([
         //     'password' => Crypt::encrypt($request->password)
