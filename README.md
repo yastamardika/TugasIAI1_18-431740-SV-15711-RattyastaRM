@@ -1,14 +1,14 @@
-#TUGAS IAI
+# TUGAS IAI
 
-##Semua routing disesuaikan dengan perintah yang diberikan 
+## Semua routing disesuaikan dengan perintah yang diberikan 
 
  
-##routing yang tersedia:
+## Route yang tersedia:
 
 no 1&2: 
-/mahasiwa
-/mahasiwa/{id}
-/submission
+/mahasiwa => melihat semua mahasiswa per id
+/mahasiwa/{id} => method lihat per id dan method update
+/submission => melihat semua git
 /submission/{id} => untuk method delete
 
 no 3:
